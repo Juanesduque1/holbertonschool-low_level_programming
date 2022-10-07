@@ -1,1 +1,1 @@
-int puts(const char* "Programming is like building a multilingual puzzle"\n)
+gcc -c int puts(const char* "Programming is like building a multilingual puzzle"\n)
