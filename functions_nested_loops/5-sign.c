@@ -12,7 +12,7 @@
 int print_sign(int n)
 {
 if (n < 0)
-printf("-1");
+printf("-ls");
 return (-1);
 
 if (n == 0)
