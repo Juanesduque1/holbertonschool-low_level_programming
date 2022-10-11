@@ -8,8 +8,6 @@
 
 int _islower(int ch)
 {
-int ch;
-
 if (islower(ch))
 {
 putchar('1');
