@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /**
  *main - Main is the first program of c
  *Description: Prints the text of the exersice with printf
