@@ -12,7 +12,7 @@
 
 int main(void)
 {
-int putchar(int ch);
+int ch;
 
 for (ch = '0' ; ch <= '9' ; ch++)
 {
