@@ -7,4 +7,5 @@ int _islower(int ch);
 int _isalpha(int ch);
 int print_sign(int n);
 int _abs(int);
+int print_last_digit(int n);
 #endif
