@@ -5,6 +5,7 @@
 /**
 *_islower - Check if string is lowercase
 *Description: Program of task 3
+*Return: 0 or 1
 */
 
 int _islower(int ch)
