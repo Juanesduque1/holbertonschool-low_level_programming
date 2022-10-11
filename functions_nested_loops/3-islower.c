@@ -8,7 +8,7 @@
 
 int _islower(int ch)
 {
-if (islower(ch))
+if (_islower(ch))
 {
 putchar('1');
 }
