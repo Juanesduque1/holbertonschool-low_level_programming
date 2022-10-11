@@ -8,12 +8,9 @@
 
 int _islower(int ch)
 {
-if (islower(ch))
-{
-putchar('1');
-}
+if (ch >= 'a' && ch <= 'z')
+return ('1');
+
 else
-{
-putchar('0');
-}
+return ('0');
 }
