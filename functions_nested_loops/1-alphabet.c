@@ -2,10 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Functions, nested loops
-*
-* Return: Zero
+* print_alphabet - print alphabet in lowercase
 */
+
 void print_alphabet(void);
 {
 char ch;
