@@ -4,6 +4,7 @@
 #include "main.h"
 /**
 *_islower - Check if string is lowercase
+*@ch: variable
 *Description: Program of task 3
 *Return: 0 or 1
 */
