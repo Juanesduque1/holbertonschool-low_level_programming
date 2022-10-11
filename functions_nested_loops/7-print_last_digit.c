@@ -20,7 +20,7 @@ _putchar(ld);
 return (ld);
 }
 else
-{   
+{
 _putchar(ld);
 return (ld);
 }
