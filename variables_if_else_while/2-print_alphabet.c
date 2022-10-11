@@ -8,12 +8,12 @@
 *
 */
 
-int main (void)
+int main(void)
 {
-   char ch;
+char ch;
 
-   for(ch = 'a' ; ch <= 'z' ; ch++)
-   putchar(ch);
+for (ch = 'a' ; ch <= 'z' ; ch++)
+putchar(ch);
 
-   return(0);
+return (0);
 }
