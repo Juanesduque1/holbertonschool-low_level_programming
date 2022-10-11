@@ -18,7 +18,7 @@ putchar(ch);
 putchar(',');
 putchar(' ');
 }
-putchar('9''\n');
+putchar('9', '\n');
 
 return (0);
 }
