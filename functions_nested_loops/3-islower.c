@@ -16,4 +16,3 @@ else
 {
 putchar('0');
 }
-}
