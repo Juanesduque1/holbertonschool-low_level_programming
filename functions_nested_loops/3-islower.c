@@ -10,10 +10,10 @@ int _islower(int ch)
 {
 if (_islower(ch))
 {
-putchar('1');
+printf('1');
 }
 else
 {
-putchar('0');
+printf('0');
 }
 }
