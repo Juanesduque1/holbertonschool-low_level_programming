@@ -1,12 +1,23 @@
-#include<stdio.h>
-#include"main.h"
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
- *main - Main is the first program of c
- *Description: Prints the text of the exersice with printf
- *Return: zero
+ * main - Functions, nested loops
+ *
+ * Return: Zero
  */
 int main(void)
 {
-  printf("_putchar\n");
-  return (0);
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
+
+return (0);
+
 }
