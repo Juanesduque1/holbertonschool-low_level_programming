@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* print_alphabet - a
+* print_alphabet_x10 - a
 * Description: Print alphabet in lowercase
 */
 
@@ -14,10 +14,10 @@ while (i <= 10)
 {
 while (ch <= 'z')
 {
-putchar(ch);
+_putchar(ch);
 ch++;
 }
-putchar('\n');
+_putchar('\n');
 i++;
 }
 }
