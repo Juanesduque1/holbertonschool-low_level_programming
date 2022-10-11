@@ -2,8 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* print_alphabet_x10 - a
-* Description: Print alphabet in lowercase
+*print_alphabet_x10 - Print alphabet in lowercase
 */
 
 void print_alphabet_x10(void)
