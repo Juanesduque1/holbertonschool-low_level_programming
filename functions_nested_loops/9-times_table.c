@@ -19,23 +19,23 @@ for (l = 0; l <= 9; l++)
     for (c = 0; c <= 9; c++)
     {
         int r = i * c;
-        if (r > 9);
+        if (r > 9)
         {
             _putchar(',');
             _putchar(' ');
-            _putchar((r / 10) + '0')
-            _putchar((r % 10) + '0')
+            _putchar((r / 10) + '0');
+            _putchar((r % 10) + '0');
         }
-        else if (r < 9)
-        {
-            _putchar(',');
-            _putchar(' ');
-            _putchar(' ');
-        }
-        else if (c == 0)
-        {
-            _putchar(r + '0');        
-        }
+            else if (r < 9)
+            {
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+            }
+            else if (c == 0)
+            {
+                _putchar(r + '0');        
+            }
     i++;
     _putchar('\n');
     }
