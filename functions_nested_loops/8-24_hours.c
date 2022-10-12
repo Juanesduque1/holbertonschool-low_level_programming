@@ -15,11 +15,13 @@ int i;
 for (h = 0; h <= 23; h++)
 {
 for (i = 0; i <= 59; i++)
+{
 _putchar((h / 10) + '0');
 _putchar((h % 10) + '0');
 _putchar(':');
 _putchar((i / 10) + '0');
 _putchar((i % 10) + '0');
 _putchar('\n');
+}
 }
 }
