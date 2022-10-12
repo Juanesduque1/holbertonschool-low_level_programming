@@ -16,10 +16,10 @@ int column;
     {
         for (column = 0; column <= 9; column++)
         {
-            _putchar(line);
+            _putchar(line + '0');
             _putchar(',');
             _putchar(' ');
-            _putchar(column);
+            _putchar(column + '0');
             _putchar((line * column) + '0');
         }
             _putchar('\n');
