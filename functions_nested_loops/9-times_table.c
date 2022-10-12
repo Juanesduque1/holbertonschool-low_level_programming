@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*times_table - Check if string is lowercase
+*times_table - Print a matrix of 9 times
 *Description: Program of task 8
 *Return: last digit
 */
@@ -18,14 +18,26 @@ for (l = 0; l <= 9; l++)
 {
     for (c = 0; c <= 9; c++)
     {
-        i = 0;
-        _putchar((i= l * c) + '0');
-        _putchar(',');
-        _putchar(' ');
-        _putchar(' ');
-        
+        int r = i * c;
+        if (r > 9);
+        {
+            _putchar(',');
+            _putchar(' ');
+            _putchar((r / 10) + '0')
+            _putchar((r % 10) + '0')
+        }
+        else if (r < 9)
+        {
+            _putchar(',');
+            _putchar(' ');
+            _putchar(' ');
+        }
+        else if (c == 0)
+        {
+            _putchar(r + '0');        
+        }
     i++;
+    _putchar('\n');
     }
-_putchar('\n');
 }
 }
