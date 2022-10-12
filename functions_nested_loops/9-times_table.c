@@ -19,7 +19,9 @@ int column;
             _putchar(line);
             _putchar(',');
             _putchar(' ');
+            _putchar(column);
             _putchar('\n');
+            _putchar((i * j) + '0')
         }
         
     }
