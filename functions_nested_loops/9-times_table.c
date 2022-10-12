@@ -10,23 +10,21 @@
 
 void times_table(void)
 {
-int line;
-int i = 0;
-int column;
+int l;
+int c;
+int i;
 
-while (i <= 9)
+
+for (l = 0; l <= 9; l++)
 {
-for (column = 0; column <= 9; column++)
-{
-    for (line = 0; line <= 9; line++)
+    for (c = 0; c <= 9; c++)
     {
-        _putchar((line * column) + '0');
+        i = l * c;
+        _putchar((i * i) + '0');
         _putchar(',');
         _putchar(' ');
         
     }
 _putchar('\n');
-}
-i++;
 }
 }
