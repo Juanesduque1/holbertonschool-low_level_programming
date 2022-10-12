@@ -19,13 +19,13 @@ for (l = 0; l <= 9; l++)
     for (c = 0; c <= 9; c++)
     {
         i = 0;
-        _putchar((i * c) + '0');
+        _putchar((i=  * c) + '0');
         _putchar(',');
         _putchar(' ');
         _putchar(' ');
         
+    i++;
     }
-i++;
 _putchar('\n');
 }
 }
