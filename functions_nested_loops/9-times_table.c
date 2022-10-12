@@ -25,8 +25,8 @@ for (column = 0; column <= 9; column++)
         _putchar(' ');
         
     }
+_putchar('\n');
 }
 i++;
-_putchar('\n');
 }
 }
