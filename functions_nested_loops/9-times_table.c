@@ -11,10 +11,8 @@
 void times_table(void)
 {
 int line;
-int column;
 int i = 0;
 
-*//for (i = 0; i <= 9; i++)*/
 while (i <= 9)
 {
 
