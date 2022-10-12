@@ -21,6 +21,8 @@ while (i <= 9)
     for (line = 0; line <= 9; line++)
     {
         _putchar((line * line) + '0');
+        _putchar(',');
+        _putchar(' ');
         
     }
 i++;
