@@ -20,9 +20,9 @@ int column;
             _putchar(',');
             _putchar(' ');
             _putchar(column);
-            _putchar('\n');
             _putchar((line * column) + '0');
         }
+            _putchar('\n');
         
     }
 
