@@ -12,19 +12,20 @@ void times_table(void)
 {
 int line;
 int column;
+int i = 0;
+
+*//for (i = 0; i <= 9; i++)*/
+while (i <= 9)
+{
+
+{
+
     for (line = 0; line <= 9; line++)
     {
-        for (column = 0; column <= 9; column++)
-        {
-            _putchar(line + '0');
-            _putchar(',');
-            _putchar(' ');
-            _putchar(column + '0');
-            _putchar((line * column) + '0');
-        }
-            _putchar('\n');
+        _putchar((line * line) + '0');
         
     }
-
-    
+i++;
+_putchar('\n');
+}
 }
