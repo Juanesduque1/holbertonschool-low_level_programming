@@ -26,16 +26,16 @@ for (l = 0; l <= 9; l++)
             _putchar((r / 10) + '0');
             _putchar((r % 10) + '0');
         }
+        else if (c == 0)
+        {
+            _putchar(r + '0');        
+        }
         else if (r < 9)
         {
             _putchar(r + '0');
             _putchar(',');
             _putchar(' ');
             _putchar(' ');
-        }
-        else if (c == 0)
-        {
-            _putchar(r + '0');        
         }
     i++;
     _putchar('\n');
