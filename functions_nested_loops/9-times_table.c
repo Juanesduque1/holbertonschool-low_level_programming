@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*times_table - Print a matrix of 9 times
-*Description: Program of task 8
-*Return: last digit
-*/
+ *times_table - Print a matrix of 9 times
+ *Description: Program of task 8
+ *Return: last digit
+ */
 
 void times_table(void)
 {
@@ -31,7 +31,7 @@ void times_table(void)
             }
             else if (c == 0)
             {
-                _putchar(r + '0');        
+                _putchar(r + '0');
             }
             else if (r <= 9)
             {
