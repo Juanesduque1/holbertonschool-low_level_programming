@@ -16,12 +16,12 @@ int ld = n % 10;
 if (n < 0)
 {
 ld = ld * -1;
-_putchar(ld);
+_putchar(n);
 return (ld);
 }
 else
 {
-_putchar(ld);
+_putchar(n);
 return (ld);
 }
 }
