@@ -30,7 +30,7 @@ for (l = 0; l <= 9; l++)
         {
             _putchar(r + '0');        
         }
-        else if (r < 9)
+        else if (r <= 9)
         {
             _putchar(r + '0');
             _putchar(',');
