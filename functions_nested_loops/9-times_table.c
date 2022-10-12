@@ -21,7 +21,7 @@ for (l = 0; l <= 9; l++)
 for (c = 0; c <= 9; c++)
 {
 int r;
-r = i * c;
+r = i *c;
 if (r > 9)
 {
 _putchar(',');
