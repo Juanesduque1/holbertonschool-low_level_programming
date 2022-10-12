@@ -21,7 +21,7 @@ int column;
             _putchar(' ');
             _putchar(column);
             _putchar('\n');
-            _putchar((i * j) + '0')
+            _putchar((line * column) + '0');
         }
         
     }
