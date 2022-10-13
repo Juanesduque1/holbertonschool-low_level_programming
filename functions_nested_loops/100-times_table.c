@@ -1,22 +1,12 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 #include "main.h"
 /**
 *print_times_table - Prints matrix size n
 *@n: Parameter
-*Description: Program of task 12
-*Return: Result of the function
 */
-
 void print_times_table(int n)
 {
-int l;
-int c;
-int i;
-
+int l, c, i;
 i = 0;
-
 for (l = 0; l <= n; l++)
 {
 if (n <= 15)
