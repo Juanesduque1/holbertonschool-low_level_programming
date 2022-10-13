@@ -12,8 +12,7 @@ if (n <= 15)
 {
 for (c = 0; c <= n; c++)
 {
-int r;
-r = i *c;
+int r = i * c;
 if (r > 9 && r < 100)
 {
 _putchar(',');
