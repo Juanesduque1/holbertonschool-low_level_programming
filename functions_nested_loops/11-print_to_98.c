@@ -25,7 +25,7 @@ for (i = n; i <= 98; i++)
 {
 printf("%i, ", i);
 }
-if (i == 98)
+else if (i == i)
 {
 printf("%i", i);
 }
