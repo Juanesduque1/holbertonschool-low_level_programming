@@ -1,1 +1,1 @@
-# 0x1B.c
+Readme of Makefile proect
