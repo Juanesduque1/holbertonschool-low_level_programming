@@ -21,7 +21,8 @@ _putchar(',');
 _putchar(' ');
 _putchar(' ');
 _putchar((r / 10) + '0');
-_putchar((r % 10) + '0');}
+_putchar((r % 10) + '0');
+}
 else if (c == 0)
 {
 _putchar(r + '0');
