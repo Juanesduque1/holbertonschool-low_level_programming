@@ -1,6 +1,8 @@
 #include "main.h"
-/***print_times_table - Prints matrix size n
-*@n: Parameter*/
+/**
+*print_times_table - Prints matrix size n
+*@n: Parameter
+*/
 void print_times_table(int n)
 {
 int l, c, i = 0;
@@ -18,10 +20,6 @@ _putchar(' ');
 _putchar(' ');
 _putchar((r / 10) + '0');
 _putchar((r % 10) + '0');
-}
-else if (c == 0)
-{
-_putchar(r + '0');
 }
 else if (r <= 9)
 {
