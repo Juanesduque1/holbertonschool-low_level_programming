@@ -16,9 +16,10 @@ int c;
 int i;
 
 i = 0;
-if (n <= 15)
-{
+
 for (l = 0; l <= n; l++)
+{
+if (n <= 15)
 {
 for (c = 0; c <= n; c++)
 {
@@ -54,9 +55,9 @@ _putchar((r % 10) + '0');
 i++;
 _putchar('\n');
 }
-}
-else 
+else
 {
 break;
+}
 }
 }
