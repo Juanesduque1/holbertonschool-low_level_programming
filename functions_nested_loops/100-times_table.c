@@ -29,11 +29,7 @@ _putchar(r + '0');
 }
 else if (r <= 9)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar(r + '0');
+printf(",   %i", r);
 }
 else if (r >= 100)
 {
