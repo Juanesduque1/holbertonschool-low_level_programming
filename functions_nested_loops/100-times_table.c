@@ -1,7 +1,6 @@
 #include "main.h"
-/**
-*print_times_table - Prints matrix size n
-*/
+/***print_times_table - Prints matrix size n
+*@n: Parameter*/
 void print_times_table(int n)
 {
 int l, c, i = 0;
