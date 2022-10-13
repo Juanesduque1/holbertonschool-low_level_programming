@@ -14,6 +14,8 @@ int add(int x, int y)
 {
 int sum;
 
+sum = x + y;
+
 if (sum <= 9)
 {
 _putchar(sum +'0');
