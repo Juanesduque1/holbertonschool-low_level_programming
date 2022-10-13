@@ -33,5 +33,4 @@ _putchar((sum / 10) + '0');
 _putchar((sum % 100) + '0');
 _putchar((sum % 10) + '0');
 }
-
 }
