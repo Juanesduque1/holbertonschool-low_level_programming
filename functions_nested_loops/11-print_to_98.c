@@ -29,7 +29,7 @@ printf("%i, ", i);
 }
 else
 {
-printf("%i", i);
+printf("%i\n", i);
 }
 }
 }
@@ -43,7 +43,7 @@ printf("%i, ", i);
 }
 else
 {
-printf("%i", i);
+printf("%i\n", i);
 }
 }
 }
