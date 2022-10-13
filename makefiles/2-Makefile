@@ -4,3 +4,5 @@ NAME= school
 CC= gcc $(SRC) $(OBJ) -o $(NAME)
 all: $(SRC) $(OBJ)
 	$(CC)
+school:
+	touch $(NAME)
