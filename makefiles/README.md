@@ -1,0 +1,1 @@
+Readme of Makefile project
