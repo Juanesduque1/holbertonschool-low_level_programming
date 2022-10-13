@@ -29,7 +29,11 @@ _putchar(r + '0');
 }
 else if (r <= 9)
 {
-printf(",   %i", r);
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
+_putchar(r + '0');
 }
 else if (r >= 100)
 {
@@ -46,6 +50,4 @@ _putchar('\n');
 else
 {
 break;
-}
-}
-}
+}}}
