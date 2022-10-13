@@ -4,14 +4,29 @@
 #include "main.h"
 /**
 *add - Adds two integers
+*@x: First number
+*@y: Second number
 *Description: Program of task 10
 *Return: Result of the addition
 */
 
-int add(int n1, int n2)
+int add(int x, int y)
 {
 int sum;
 
-sum = n1 + n2;
-printf('%i', sum);
+if (sum <= 9)
+{
+_putchar(sum +'0');
+}
+else if (sum > 9)
+{
+_putchar((sum / 10) + '0');
+_putchar((sum % 10) + '0');
+}
+else if (sum >= 100)
+{
+_putchar((sum / 10) + '0');
+_putchar((sum % 100) + '0');
+_putchar((sum % 10) + '0');
+}
 }
