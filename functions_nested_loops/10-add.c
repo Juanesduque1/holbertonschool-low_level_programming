@@ -20,15 +20,18 @@ if (sum <= 9)
 {
 _putchar(sum +'0');
 }
+
 else if (sum > 9)
 {
 _putchar((sum / 10) + '0');
 _putchar((sum % 10) + '0');
 }
+
 else if (sum >= 100)
 {
 _putchar((sum / 10) + '0');
 _putchar((sum % 100) + '0');
 _putchar((sum % 10) + '0');
 }
+
 }
