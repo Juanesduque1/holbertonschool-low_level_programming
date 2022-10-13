@@ -15,20 +15,20 @@ int i;
 
 if (n == 98)
 {
-_putchar(n);
+printf("98");
 }
 if (n < 98)
 {
-for ( i = n; i <= 98; i++)
+for (i = n; i <= 98; i++)
 {
-printf("%i, ", n);
+printf("%i, ", i);
 }
 }
 if (n > 98)
 {
 for ( i = n; i >= 98; i--)
 {
-printf("%i, ", n);
+printf("%i, ", i);
 }
 }
 }
