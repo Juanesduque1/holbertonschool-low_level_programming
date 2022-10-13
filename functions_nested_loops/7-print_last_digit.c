@@ -17,13 +17,11 @@ ld = n % 10;
 if (n < 0)
 {
 ld = ld * -1;
-/*ld = n % 10;*/
 _putchar(ld + '0');
 return (ld);
 }
 else
 {
-/*ld = n % 10;*/
 _putchar(ld + '0');
 return (ld);
 }

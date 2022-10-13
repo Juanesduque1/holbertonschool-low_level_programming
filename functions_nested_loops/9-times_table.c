@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  *times_table - Print a matrix of 9 times
- *Description: Program of task 8
+ *Description: Program of task 9
  *Return: last digit
  */
 
