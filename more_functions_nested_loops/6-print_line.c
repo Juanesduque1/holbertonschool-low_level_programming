@@ -8,7 +8,7 @@
 *Return: Line
 */
 
-void print_line(int n);
+void print_line(int n)
 {
 int c;
 
