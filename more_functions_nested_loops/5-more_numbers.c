@@ -13,7 +13,7 @@ void more_numbers(void)
 int i = 0;
 int c;
 
-for (c = 0; c <= 10; c++)
+while (c <= 10)
 {
 while (i <= 14)
 {
@@ -25,5 +25,6 @@ _putchar((i % 10) + '0');
 i++;
 }
 _putchar('\n');
+c++;
 }
 }
