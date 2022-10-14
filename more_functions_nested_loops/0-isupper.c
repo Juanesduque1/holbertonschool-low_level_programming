@@ -9,7 +9,7 @@
 *Return: 0 or 1
 */
 
-int _islower(int ch)
+int _isupper(int ch)
 {
 if (ch >= 'A' && ch <= 'Z')
 return (1);
