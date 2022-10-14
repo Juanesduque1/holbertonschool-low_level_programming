@@ -29,4 +29,5 @@ printf("Fizz");
 else
 printf("%i", i);
 }
+return (0);
 }
