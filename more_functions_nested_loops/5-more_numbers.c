@@ -17,15 +17,14 @@ for (c = 0; c <= 10; c++)
 {
 while (i <= 14)
 {
-if (i < 10)
+if (i >= 10)
 {
-putchar(i + '0');
+_putchar((i / 10) + '0');
+}
+else 
+_putchar((i % 10) + '0');
 i++;
 }
-else
-putchar((i / 10) + '0');
-putchar((i % 10) + '0');
-}
-putchar('\n');
+_putchar('\n');
 }
 }
