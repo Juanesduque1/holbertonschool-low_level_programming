@@ -13,5 +13,5 @@ int mul(int a, int b)
 {
 int mul;
 mul = a * b;
-printf("%i", mul);
+return (mul);
 }
