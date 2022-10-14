@@ -16,12 +16,15 @@ int s;
 
 for (c = 1; c <= n; c++)
 {
-_putchar('\\');
-_putchar('\n');
 for (s = 0; s < c; s++)
+{
+if (c != 1)
 {
 _putchar(' ');
 }
+}
+_putchar('\\');
+_putchar('\n');
 }
 if (n <= 0)
 {
