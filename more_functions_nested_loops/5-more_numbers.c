@@ -11,7 +11,7 @@
 void more_numbers(void)
 {
 int i = 0;
-int c = 0;
+int c;
 
 for (c = 0; c <= 10; c++)
 {
