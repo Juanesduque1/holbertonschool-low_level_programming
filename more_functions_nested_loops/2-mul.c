@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*_isdigit - Check if variable is digit
-*@c: variable
-*Description: Program of task 1
-*Return: 0 or 1
+*mul - Multiply two numbers
+*@a: variable 1
+*@b: variable 2
+*Description: Program of task 2
+*Return: Multiplication
 */
 
 int mul(int a, int b)
