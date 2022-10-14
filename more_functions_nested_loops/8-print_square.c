@@ -20,6 +20,8 @@ for (c = 1; c <= size; c++)
 _putchar('#');
 }
 if (size <= 0)
+{
 _putchar('\n');
+}
 }
 }
