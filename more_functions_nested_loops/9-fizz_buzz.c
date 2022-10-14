@@ -27,7 +27,10 @@ else if (i % 3 == 0)
 printf("Fizz");
 }
 else
+{
 printf("%i", i);
+}
+printf(" ");
 }
 return (0);
 }
