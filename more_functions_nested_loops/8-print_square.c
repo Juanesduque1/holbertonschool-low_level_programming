@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *times_table - Print a matrix of 9 times
- *Description: Program of task 9
- *Return: last digit
+ *print_square - Print a matrix of #
+ *Description: Program of task 8
+ *Return: Matrix
  */
 
 void print_square(int size)
