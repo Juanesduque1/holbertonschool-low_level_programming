@@ -18,10 +18,10 @@ for (c = 1; c <= n; c++)
 {
 _putchar('\\');
 _putchar('\n');
-for (s = 1; s <= c; s++)
+for (s = 1; s < c; s++)
 {
 _putchar(' ');
 }
-_putchar('\n');
 }
+_putchar('\n');
 }
