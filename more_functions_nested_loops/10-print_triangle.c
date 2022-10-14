@@ -23,7 +23,7 @@ if (i >= c)
 {
 _putchar('#');
 }
-else 
+else
 {
 _putchar(' ');
 }
