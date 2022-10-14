@@ -18,5 +18,4 @@ for (c = 1; c <= n; c++)
 _putchar('\\');
 _putchar('\n');
 }
-_putchar('\n');
 }
