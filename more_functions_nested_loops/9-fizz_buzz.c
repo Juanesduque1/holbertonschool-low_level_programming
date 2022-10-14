@@ -30,7 +30,10 @@ else
 {
 printf("%i", i);
 }
+if (i != 100)
+{
 printf(" ");
+}
 }
 return (0);
 }
