@@ -4,7 +4,7 @@
 #include "main.h"
 /**
  *print_square - Print a matrix of #
- *size: Variable
+ *@size: Variable
  *Description: Program of task 8
  *Return: Matrix
  */
