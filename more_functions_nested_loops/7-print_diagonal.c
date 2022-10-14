@@ -16,7 +16,7 @@ int s;
 
 for (c = 1; c <= n; c++)
 {
-for (s = 0; s < c; s++)
+for (s = 1; s < c; s++)
 {
 if (c != 1)
 {
