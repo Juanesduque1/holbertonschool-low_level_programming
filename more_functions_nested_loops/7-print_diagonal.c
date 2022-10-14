@@ -16,10 +16,10 @@ int s;
 
 for (c = 1; c <= n; c++)
 {
-_putchar('\\');
-_putchar('\n');
 int i;
 i = c -1;
+_putchar('\\');
+_putchar('\n');
 for (s = 0; s < i; s++)
 {
 _putchar(' ');
