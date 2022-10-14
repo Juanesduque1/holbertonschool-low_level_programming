@@ -23,5 +23,8 @@ for (s = 0; s < c; s++)
 _putchar(' ');
 }
 }
+if (n <= 0)
+{
 _putchar('\n');
+}
 }
