@@ -23,5 +23,4 @@ for (s = 1; s <= c; s++)
 _putchar(' ');
 }
 }
-_putchar('\n');
 }
