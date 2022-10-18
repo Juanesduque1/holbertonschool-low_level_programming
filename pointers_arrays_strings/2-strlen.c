@@ -18,4 +18,5 @@ while (c <= *s)
 {
     c++;
 }
+return (0);
 }
