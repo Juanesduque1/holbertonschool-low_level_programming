@@ -21,7 +21,7 @@ if (len % 2 != 0)
 {
 lenaux = (len - 1) / 2;
 }
-for (i = 0; i < lenaux; i++)
+for (i = len; i > lenaux; i--)
 {
 _putchar(str[i]);
 }
