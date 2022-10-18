@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
-*rev_string - returns a string reversed
+*print_rev - returns a string reversed
 *@s: Variable
 *
 *Return: Always 0
 */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
 int c;
 c = 0;
