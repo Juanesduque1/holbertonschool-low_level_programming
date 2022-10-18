@@ -27,18 +27,18 @@ return (c);
 *Return: Always 0
 */
 
- void rev_string(char *s)
- {
+void rev_string(char *s)
+{
 
-    int i;
-    int len = _strlen(s) -1;
-    char ch;
+int i;
+int len = _strlen(s) -1;
+char ch;
 
-    for (i = 0; i < len; i++)
-    {
-        ch = s[len];
-        s[len] = s[i];
-        s[i] = ch;
-        len--;
-    }
- }
+for (i = 0; i < len; i++)
+{
+ch = s[len];
+s[len] = s[i];
+s[i] = ch;
+len--;
+}
+}
