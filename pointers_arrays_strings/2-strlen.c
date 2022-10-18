@@ -18,5 +18,5 @@ while (s[c] != '\0')
 {
     c++;
 }
-return (0);
+return (c);
 }
