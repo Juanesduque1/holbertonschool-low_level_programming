@@ -15,7 +15,7 @@ c = 0;
 
 while (str[c] != '\0')
 {
-_putchar(c)
+_putchar(c);
 }
 
 }
