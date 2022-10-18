@@ -12,9 +12,10 @@ void puts_half(char *str)
 {
 int len;
 int i;
+int lenaux;
+
 for (len = 0; str[len] != '\0'; len++)
 {}
-int lenaux;
 lenaux = len / 2;
 if (len % 2 != 0)
 {
