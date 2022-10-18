@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+*rev_string - returns a string reversed
+*@s: Variable
+*
+*Return: Always 0
+*/
+
+void rev_string(char *s)
+{
+int c;
+c = 0;
+
+while (s[c] != '\0')
+{
+c++;
+}
+while (c < 0)
+{
+_putchar(s[c]);
+c--;
+}
+}
