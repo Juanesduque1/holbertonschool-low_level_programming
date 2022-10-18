@@ -14,13 +14,13 @@ int len;
 int i;
 for (len = 0; str[len] != '\0'; len++)
 {}
-int len2;
-len2 = len / 2;
+int lenaux;
+lenaux = len / 2;
 if (len % 2 != 0)
 {
-len2 = (len - 1) / 2;
+lenaux = (len - 1) / 2;
 }
-for (i = 0; i < len2; i++)
+for (i = 0; i < lenaux; i++)
 {
 _putchar(str[i]);
 }
