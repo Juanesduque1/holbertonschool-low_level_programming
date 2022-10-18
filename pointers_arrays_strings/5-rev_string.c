@@ -21,7 +21,7 @@ return (c);
 }
 
 /**
-*print_rev - returns a string reversed
+*rev_string - returns a string reversed
 *@s: Variable
 *
 *Return: Always 0
@@ -31,16 +31,14 @@ return (c);
  {
 
     int i;
-    int len = _strlen(s);
-    int k = len -1;
+    int len = _strlen(s) -1;
     char ch;
 
-    for (i = 0; i < len / 2; i++)
+    for (i = 0; i < len; i++)
     {
-        ch = s[i];
-        s[k] = s[i];
-        s[k] = ch;
-        k--;
+        ch = s[len];
+        s[len] = s[i];
+        s[i] = ch;
+        len--;
     }
  }
- 
