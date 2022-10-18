@@ -22,4 +22,5 @@ while (c > 0)
 _putchar(s[c]);
 c--;
 }
+_putchar('\n');
 }
