@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
-*swap_int - Swap the value of two variables
-*@a: Variable one
-*@b: Variable two
+*_strlen - returns the lenght of a string
+*@c: Variable
 *
 *Return: Always 0
 */
@@ -16,7 +15,7 @@ c = 0;
 
 while (s[c] != '\0')
 {
-    c++;
+c++;
 }
 return (c);
 }
