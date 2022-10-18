@@ -20,7 +20,7 @@ if (len % 2 != 0)
 {
 len2 = (len - 1) / 2;
 }
-for (i = 0; i < len; i++)
+for (i = 0; i < len2; i++)
 {
 _putchar(str[i]);
 }
