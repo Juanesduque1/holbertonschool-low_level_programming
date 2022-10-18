@@ -19,7 +19,7 @@ for (len = 0; str[len] != '\0'; len++)
 lenaux = len / 2;
 if (len % 2 != 0)
 {
-lenaux = (len - 1) / 2;
+lenaux = ((len - 1) / 2) + 1;
 }
 for (i = lenaux; i < len; i++)
 {
