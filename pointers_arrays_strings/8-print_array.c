@@ -3,7 +3,8 @@
 
 /**
 *print_array - returns an array of integers
-*@str: Variable
+*@a: Array
+*@n: Number of integers
 *
 *Return: Always 0
 */
