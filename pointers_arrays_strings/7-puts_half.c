@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*puts_half - returns a string reversed
+*puts_half - returns the last half of a string
 *@str: Variable
 *
 *Return: Always 0

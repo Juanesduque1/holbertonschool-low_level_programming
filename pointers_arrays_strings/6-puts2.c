@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*puts2 - returns a string reversed
+*puts2 - returns a string from with i += 2
 *@str: Variable
 *
 *Return: Always 0
