@@ -27,7 +27,6 @@ if (n >= j)
 dest[i + j] = src[j];
 }
 j++;
-i++;
 }
 dest[i + j] = '\0';
 return (dest);
