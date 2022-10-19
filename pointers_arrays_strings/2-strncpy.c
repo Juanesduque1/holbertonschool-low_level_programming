@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-**_strcpy - copies the string pointed to by src n times
+**_strncpy - copies the string pointed to by src n times
 *@dest: Destination
 *@src: String to copy from
-*
+*@n: Variables that counts hoy many times it has to execute the process
 *Return: Always 0
 */
 
