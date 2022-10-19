@@ -17,16 +17,15 @@ int i;
 
 for (len = 0; src[len] != '\0'; len++)
 {}
-for (i = 0; i < n; i++)
+while (i < n)
 {
-for (c = 0; c <= len; c++)
-{
-dest[c] = src[c];
+    dest[i] = src[i];
+    i++;
 }
-/*if (c > len)
+while (i < n)
 {
-printf("-");
-}*/
+    dest[i] = '\0';
+    i++;
 }
 return (dest);
 }
