@@ -28,6 +28,6 @@ j++;
 i++;
 }
 dest[i + j] = '\0';
-return (dest);
 }
+return (dest);
 }
