@@ -23,10 +23,10 @@ for (c = 0; c <= len; c++)
 {
 dest[c] = src[c];
 }
-if (c > len)
+/*if (c > len)
 {
-printf("*");
-}
+printf("-");
+}*/
 }
 return (dest);
 }
