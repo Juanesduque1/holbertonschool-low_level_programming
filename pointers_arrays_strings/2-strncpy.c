@@ -25,7 +25,7 @@ dest[c] = src[c];
 }
 if (c > len)
 {
-printf("-");
+printf("*");
 }
 }
 return (dest);
