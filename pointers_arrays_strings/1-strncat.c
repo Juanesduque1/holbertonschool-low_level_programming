@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
-**_strcat - Concatenate two strings
+**_strncat - Concatenate two strings
 *@dest: Variable of the destination
 *@src: Variable of the string
+*@n: Variable
 *
 *Return: Always 0
 */
@@ -27,7 +28,7 @@ dest[i + j] = src[j];
 }
 j++;
 i++;
-dest[i + j] = '\0';
 }
+dest[i + j] = '\0';
 return (dest);
 }
