@@ -18,4 +18,5 @@ while (c[i])
 _putchar(toupper(c[i]));
 i++;
 }
+return (0);
 }
