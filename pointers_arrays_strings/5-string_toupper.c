@@ -13,10 +13,13 @@ char *string_toupper(char *c)
 int i;
 i = 0;
 
-while (c[i])
+while (c[i] != '\0')
 {
-_putchar(toupper(c[i]));
+if (c[i] >= 'a' && c[i] <= 'z')
+{
+c[i] = 'UPPERCASE';
+}
 i++;
 }
-return (0);
+return (c);
 }
