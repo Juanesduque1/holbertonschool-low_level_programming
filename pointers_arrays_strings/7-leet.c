@@ -8,7 +8,7 @@
 *Return: Always 0
 */
 
-char *leet(char *c)
+char *leet(char *s)
 {
 
 int i;
@@ -17,18 +17,18 @@ int n;
 char a[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 char b[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
-while (c[n] != '\0')
+while (s[n] != '\0')
 {
 i = 0;
 while (a[i] != '\0')
 {
-if (c[n] == a[i])
+if (s[n] == a[i])
 {
-c[n] = b[i];
+s[n] = b[i];
 }
 i++;
 }
 n++;
 }
-return (c);
+return (s);
 }
