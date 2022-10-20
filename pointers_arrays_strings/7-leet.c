@@ -3,7 +3,7 @@
 
 /**
 *leet - returns a string in 1337
-*@c: Variable
+*@s: Variable
 *
 *Return: Always 0
 */
