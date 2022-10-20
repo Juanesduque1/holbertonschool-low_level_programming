@@ -15,7 +15,7 @@ int i;
 int aux;
 c = n - 1;
 
-for (i = 0; i < c; i++)
+for (i = 0; i <= c; i++, c--)
 {
 aux = a[i];
 a[i] = a[c];
