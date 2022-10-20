@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
-*puts2 - returns a string from with i += 2
-*@str: Variable
+*leet - returns a string in 1337
+*@c: Variable
 *
 *Return: Always 0
 */
