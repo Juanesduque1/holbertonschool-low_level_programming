@@ -10,7 +10,6 @@
 
 char *string_toupper(char *c)
 {
-char c;
 int i;
 i = 0;
 
