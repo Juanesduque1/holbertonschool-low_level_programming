@@ -17,7 +17,7 @@ while (c[i] != '\0')
 {
 if (c[i] >= 'a' && c[i] <= 'z')
 {
-c[i] = 'UPPERCASE';
+c[i] -= 32;
 }
 i++;
 }
