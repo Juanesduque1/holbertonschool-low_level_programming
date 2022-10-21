@@ -26,5 +26,5 @@ for ( j = 0; j < size; j++)
 {
 p2 = p2 + (a[(j * size) + (size - 1 - j)]);
 }
-printf("%d, %i", p1, p2);
+printf("%d, %i\n", p1, p2);
 }
