@@ -11,11 +11,19 @@
 
 char *_strchr(char *s, char c)
 {
-while(*s)
+int i;
+for (i = 0; s[i] != '\0'; i++)
+{}
+    
+while (*s)
 {
-if(*s == c)
-return (char *)s;
+if (*s == c)
+return (char *) s;
 s++;
+}
+if (s[i] == '\0')
+{
+return (char *) s;
 }
 return (NULL);
 }
