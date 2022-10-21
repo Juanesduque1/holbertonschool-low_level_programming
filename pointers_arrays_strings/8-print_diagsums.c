@@ -22,7 +22,7 @@ for (i = 0; i < size; i++)
 p1 = p1 + (a[i * (size + 1)]);
 }
 
-for ( j = 0; j < size; j++)
+for (j = 0; j < size; j++)
 {
 p2 = p2 + (a[(j * size) + (size - 1 - j)]);
 }
