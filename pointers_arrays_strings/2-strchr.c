@@ -31,7 +31,7 @@ i++;
 }
 else
 {
-return NULL;
+return (NULL);
 }
 }
 return (s);
