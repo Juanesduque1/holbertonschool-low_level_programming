@@ -27,6 +27,10 @@ if (accept[j] == s[i])
 c++;
 }
 }
+if (accept[j] == '\0')
+{
+break;
+}
 }
 return (c);
 }
