@@ -22,12 +22,12 @@ for (i = 0; i < n; i++)
 {
 if (s[i] == c)
 {
-    while (i < n)
-    {
-    s[aux] = s[i];
-    aux++;
-    i++;
-    }
+while (i < n)
+{
+s[aux] = s[i];
+aux++;
+i++;
+}
 }
 else
 {
