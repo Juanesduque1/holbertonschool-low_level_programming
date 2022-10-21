@@ -22,7 +22,7 @@ s++;
 }
 if (s[i] == '\0')
 {
-printf("nil");
+return ((char *) s);
 }
-return (NULL);
+return (0);
 }
