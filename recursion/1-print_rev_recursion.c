@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*_puts_recursion - Return a string reversed
+*_print_rev_recursion - Return a string reversed
 *@s: String
 *
 *Return: Always 0
