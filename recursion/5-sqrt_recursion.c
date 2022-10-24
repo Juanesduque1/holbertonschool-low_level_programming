@@ -2,18 +2,6 @@
 #include <stdio.h>
 
 /**
-*_sqrt_recursion - Return square root of n
-*@n: Integer
-*
-*Return: Always 0
-*/
-
-int _sqrt_recursion(int n)
-{
-	square_root_wrapper(n, 1);
-}
-
-/**
 *_sqrt_recursion - Return square root of n with other parameter for the guess
 *@n: Integer
 *@guess: Integer
@@ -38,4 +26,16 @@ int square_root_wrapper(int n, int guess)
 	{
 		return square_root_wrapper(n, guess + 1);
 	}
+}
+
+/**
+*_sqrt_recursion - Return square root of n
+*@n: Integer
+*
+*Return: Always 0
+*/
+
+int _sqrt_recursion(int n)
+{
+	square_root_wrapper(n, 1);
 }
