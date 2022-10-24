@@ -10,18 +10,14 @@
 
 void _print_rev_recursion(char *s)
 {
-int n;
-int i;
-char ch;
+	int i = 0;
 
-for (n = 0; s[n] != '\0'; n++)
-{}
+	if (s[i] != '\0')
+	{
 
-for (i = 0; i < n; i++)
-{
-	ch = s[n];
-	s[n] = s[i];
-	s[i] = ch;
-	n--;
-}
+	_print_rev_recursion(s + 1);
+	_putchar(s[i]);
+
+	}
+
 }
