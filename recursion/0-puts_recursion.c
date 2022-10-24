@@ -3,7 +3,7 @@
 
 /**
 *_puts_recursion - Return a string
-*@c: String
+*@s: String
 *
 *Return: Always 0
 */
