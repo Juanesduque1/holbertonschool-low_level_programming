@@ -17,9 +17,14 @@ int check_prime(int n, int i)
 		return (0);
 	}
 
-	if (n % i == 0)
+	else if (n % i == 0)
 	{
 		return (1);
+	}
+	
+	else if (n < 0)
+	{
+		return (0);
 	}
 
 	else
