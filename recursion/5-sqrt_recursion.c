@@ -16,7 +16,7 @@ int square_root_wrapper(int n, int guess)
 		return (guess);
 	}
 
-	else if((guess < 0) || (guess > n))
+	else if ((guess < 0) || (guess > n))
 	{
 		return (-1);
 	}
