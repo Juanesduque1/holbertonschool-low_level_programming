@@ -37,5 +37,5 @@ int square_root_wrapper(int n, int guess)
 
 int _sqrt_recursion(int n)
 {
-	square_root_wrapper(n, 1);
+	return (square_root_wrapper(n, 1));
 }
