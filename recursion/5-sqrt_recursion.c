@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*square_root_wrapper - Return square root of n with other parameter for the guess
+*square_root_wrapper - Return square root of n with guess parameter
 *@n: Integer
 *@guess: Integer
 *
