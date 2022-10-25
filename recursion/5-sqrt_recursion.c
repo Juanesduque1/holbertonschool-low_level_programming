@@ -8,7 +8,6 @@
 *
 *Return: Always 0
 */
-
 int square_root_wrapper(int n, int guess)
 {
 
@@ -17,7 +16,7 @@ int square_root_wrapper(int n, int guess)
 		return (guess);
 	}
 
-	else if( (guess < 0) || (guess > n))
+	else if((guess < 0) || (guess > n))
 	{
 		return (-1);
 	}
@@ -27,7 +26,6 @@ int square_root_wrapper(int n, int guess)
 		return (square_root_wrapper(n, guess + 1));
 	}
 }
-
 /**
 *_sqrt_recursion - Return square root of n
 *@n: Integer
