@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-*_sqrt_recursion - Return square root of n with other parameter for the guess
+*square_root_wrapper - Return square root of n with other parameter for the guess
 *@n: Integer
 *@guess: Integer
 *
@@ -17,14 +17,14 @@ int square_root_wrapper(int n, int guess)
 		return (guess);
 	}
 
-	else if((guess < 0) || (guess > n))
+	else if( (guess < 0) || (guess > n))
 	{
 		return (-1);
 	}
 
-	else 
+	else
 	{
-		return square_root_wrapper(n, guess + 1);
+		return (square_root_wrapper(n, guess + 1));
 	}
 }
 
