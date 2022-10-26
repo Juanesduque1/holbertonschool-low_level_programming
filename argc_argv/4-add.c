@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i <= argc; i++)
 	{
-		if (isnumber(atoi(argv[i])) >= 1)
+		if (atoi(argv[i]))
 		{
 			sum = sum + (atoi(argv[i]));
 		}
