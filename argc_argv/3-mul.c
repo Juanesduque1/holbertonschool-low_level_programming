@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		a = argv[1];
-		b = argv[2];
+		a = (int) (argv[1]);
+		b = (int) (argv[2]);
 		mul = a * b;
 		printf("%d\n", mul);
 	}
