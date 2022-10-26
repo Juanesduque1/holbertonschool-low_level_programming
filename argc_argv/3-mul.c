@@ -12,11 +12,13 @@ int main(int argc, char *argv[])
 {
 	int mul;
 	int a = 0;
+	int b = 0;
 
 	if (argc == 3)
 	{
 		sscanf(argv[1], "%d", &a);
-		mul = a;
+		sscanf(argv[2], "%d", &b);
+		mul = a * b;
 		printf("%d\n", mul);
 	}
 	else
