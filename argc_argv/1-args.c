@@ -11,18 +11,17 @@
 int main(int argc, char *argv[])
 {
 	int count;
+	int null = 0;
 
 	count = argc - 1;
 
 	if (argv != 0)
 	{
 	if (count == 0)
-		return (0);
+		printf("%d\n", null);
 
 	if (count >= 1)
-	{
 		printf("%d\n", count);
-	}
 	}
 	return (0);
 }
