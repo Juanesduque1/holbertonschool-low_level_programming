@@ -16,8 +16,10 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		a = (int) (argv[1]);
-		b = (int) (argv[2]);
+		/*a = (int) (argv[1]);
+		b = (int) (argv[2]);*/
+		sscanf(argv[1], "%d", &a);
+		sscanf(argv[2], "%d", &b);
 		mul = a * b;
 		printf("%d\n", mul);
 	}
