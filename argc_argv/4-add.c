@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
 * main - Function that prints the number of arguments
@@ -8,7 +9,7 @@
 * @argv: Array of char pointers
 * Return: Always 0
 */
-	
+
 int main(int argc, char *argv[])
 {
 	int i;
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i <= argc; i++)
 	{
-		if (atoi(argv[i]) >= 0)
+		if (isnumber(atoi(argv[i])) >= 1)
 		{
 			sum = sum + (atoi(argv[i]));
 		}
