@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	int total, i, j;
+	int total, i;
+	int j = 0;
 	char coins[] = {25, 10, 5, 2, 1};
 
 
@@ -37,9 +38,10 @@ int main(int argc, char *argv[])
 			continue;
 		}
 
-		for (j = 0; coins[i] <= total; j++)
+		while( coins[i] <= total)
 		{
 			total = total - coins[i];
+			j++;
 		}
 	}
 	printf("%d\n", j);
