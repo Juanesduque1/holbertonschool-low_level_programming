@@ -11,12 +11,12 @@
 int main(int argc, char *argv[])
 {
 	int mul;
-	int a = 0;
-	int b = 0;
+	int a = atoi(argv[1]);
+	int b = atoi(argv[2]);
 
 	if (argc == 3)
 	{
-		mul = sscanf(argv[1], "%d", &a) * sscanf(argv[2], "%d", &b);
+		mul = a * b;
 		printf("%d\n", mul);
 	}
 	else
