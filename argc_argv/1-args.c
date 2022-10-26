@@ -11,12 +11,13 @@
 int main(int argc, char *argv[])
 {
 	int count;
+
 	count = argc - 1;
 
 	if (argv != 0)
 	{
-	if (argc == 1)
-		return(0);
+	if (argc == 0)
+		return('0');
 
 	if (count >= 1)
 	{
