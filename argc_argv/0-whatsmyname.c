@@ -3,7 +3,7 @@
 
 /**
 * main - Function that prints the name of the program
-* @argc: Variable that tells the number of arguments
+* @argc: Variable that counts the number of arguments
 * @argv: Array of char pointers
 * Return: Always 0
 */
