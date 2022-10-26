@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 
 	if (argv != 0)
 	{
-	if (argc == 0)
-		return('0');
+	if (count == 0)
+		return (0);
 
 	if (count >= 1)
 	{
