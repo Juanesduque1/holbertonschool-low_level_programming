@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
 	int a;
 	int b;
 
-	if (argc == 2)
+	if (argc == 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
+		a = (int) (argv[1]);
+		b = (int) (argv[2]);
 		mul = a * b;
 		printf("%d\n", mul);
 	}
@@ -26,4 +26,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	return (0);
 }
