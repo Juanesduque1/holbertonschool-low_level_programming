@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 			continue;
 		}
 
-		for (j = 0; coins[i] >= total; j++)
+		for (j = 0; coins[i] <= total; j++)
 		{
 			total = total - coins[i];
 		}
