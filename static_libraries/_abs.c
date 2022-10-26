@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
+
 /**
 *_abs - Check if string is lowercase
 *@n: variable
