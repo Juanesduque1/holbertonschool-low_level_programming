@@ -3,43 +3,38 @@
 #include <string.h>
 
 /**
-*is_palindrome_check - Return 1 if a string is palindrome, 0 if it is not
+*is_palindrome_check - Function to assist the is_palindrome function, wich returns 1 if a string is palindrome, 0 if it is not
 *@s: String
-*@i: Index
+*@l: Left character
+*@r: Right character
 *
 *Return: Always 0
 */
 
-int is_palindrome_check(char *s, int i)
+int is_palindrome_check(char *s, int l, int r)
 {
-
-	int len = strlen(s) - (i -1);
-
-	if (s[i] == s[len])
+	if (l >= r)
 	{
-		if (i + 1 == len || i == len)
-		{
-			return (1);
-		}
-		is_palindrome_check(s, i + 1);
+		return (1);
 	}
-	else
+	else if (s[l] != s[r])
 	{
 		return (0);
 	}
-	return (0);
+	else
+		return (is_palindrome_check(s, l + 1, r - 1));
 }
 
-
 /**
-*check_prime - Return if a number is prime with 2 parameters
-*@n: Number
-*@i: Parameter
+*is_palindrome - Return 1 if a string is palindrome, 0 if it is not
+*@s: String
 *
 *Return: Always 0
 */
 
 int is_palindrome(char *s)
 {
-	return (is_palindrome_check(s, 1));
+	int len = strlen(s) - 1;
+
+	return (is_palindrome_check(s, 0, len));
 }
