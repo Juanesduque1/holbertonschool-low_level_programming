@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-*is_palindrome_check - Function to assist the is_palindrome function, wich returns 1 if a string is palindrome, 0 if it is not
+*is_palindrome_check - Function to assist the is_palindrome
 *@s: String
 *@l: Left character
 *@r: Right character
