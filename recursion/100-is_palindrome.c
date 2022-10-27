@@ -21,7 +21,7 @@ int is_palindrome_check(char *s, int i)
 		{
 			return (1);
 		}
-		is_palindrome_check(*s, i + 1);
+		is_palindrome_check(s, i + 1);
 	}
 	else
 	{
@@ -40,5 +40,5 @@ int is_palindrome_check(char *s, int i)
 
 int is_palindrome(char *s)
 {
-	return (is_palindrome_check(*s, 1));
+	return (is_palindrome_check(s, 1));
 }
