@@ -27,6 +27,7 @@ int is_palindrome_check(char *s, int i)
 	{
 		return (0);
 	}
+	return (0);
 }
 
 
