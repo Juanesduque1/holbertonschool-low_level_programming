@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-*is_palindrome_check - Function to assist the is_palindrome
+*is_palindrome_check - Function to assist is_palindrome
 *@s: String
 *@l: Left character
 *@r: Right character
