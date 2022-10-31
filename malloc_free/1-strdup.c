@@ -4,11 +4,10 @@
 #include <string.h>
 
 /**
-**create_array - Return a array of a single character using Malloc
-*@size: Size of the array
-*@c: Character to return 'size' times in the array
+**_strdup - Return a copy of a string
+*@str: Original string
 *
-*Return: Array
+*Return: Copy of the string
 */
 
 char *_strdup(char *str)
@@ -19,7 +18,7 @@ char *_strdup(char *str)
 
 	char *nstr = malloc(len);
 
-	if (nstr == NULL)
+	if (nstr == NULL || nstr == 0)
 	{
 		return (NULL);
 	}
