@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	if (nstr == NULL || str == NULL)
 	{
 		printf("failed to allocate memory\n");
-        return (1);
+        return (0);
 	}
 
 	for (i = 0; i < len; i++)
