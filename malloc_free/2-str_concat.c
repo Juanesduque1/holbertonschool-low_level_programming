@@ -4,10 +4,11 @@
 #include <string.h>
 
 /**
-**_strdup - Return a copy of a string
-*@str: Original string
+**str_concat - Concatenate 2 strings into one array
+*@s1: First string
+*@s2: First string
 *
-*Return: Copy of the string
+*Return: Array result or NULL
 */
 
 char *str_concat(char *s1, char *s2)
@@ -15,6 +16,7 @@ char *str_concat(char *s1, char *s2)
 
 	int len1, len2, tlen, i, j;
 	char *array;
+
 	i = 0;
 	j = 0;
 
@@ -31,7 +33,12 @@ char *str_concat(char *s1, char *s2)
 	len2 = strlen(s2) + 1;
 	tlen = len1 + len2;
 
-	array = malloc(tlen);
+	array = malloc(tlen) - 1;
+
+	if (array == NULL)
+	{
+		return (NULL);
+	}
 
 	while (s1[i] != '\0')
 	{
