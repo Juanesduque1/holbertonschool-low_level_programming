@@ -27,19 +27,19 @@ char *str_concat(char *s1, char *s2)
 
 	len1 = strlen(s1) + 1;
 	len2 = strlen(s2) + 1;
-	tlen = len1 + len2
+	tlen = len1 + len2;
 
 	array = malloc(tlen);
 
 	while (s1[i] != '\0')
 	{
-		array[i] = s1[i]
+		array[i] = s1[i];
 		i++;
 	}
 
 	while (s2[i] != '\0')
 	{
-		array[i] = s2[i]
+		array[i] = s2[i];
 		i++;
 	}
 	return (array);
