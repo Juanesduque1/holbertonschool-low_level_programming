@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	len2 = strlen(s2) + 1;
 	tlen = len1 + len2;
 
-	array = malloc(tlen) - 1;
+	array = malloc(tlen - 1);
 
 	if (array == NULL)
 	{
