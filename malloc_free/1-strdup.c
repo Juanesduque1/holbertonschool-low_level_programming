@@ -20,8 +20,7 @@ char *_strdup(char *str)
 
 	if (nstr == NULL || str == NULL)
 	{
-		printf("failed to allocate memory\n");
-        return (0);
+        return (NULL);
 	}
 
 	for (i = 0; i < len; i++)
