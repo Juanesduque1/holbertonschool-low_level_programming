@@ -13,8 +13,10 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	int len1, len2, tlen, i;
+	int len1, len2, tlen, i, j;
 	char *array;
+	i = 0;
+	j = 0;
 
 	if (s1 == 0)
 	{
@@ -35,12 +37,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		array[i] = s1[i];
 		i++;
+		j++
 	}
+
+	i = 0;
 
 	while (s2[i] != '\0')
 	{
-		array[i] = s2[i];
+		array[j] = s2[i];
 		i++;
+		j++;
 	}
 	return (array);
 }
