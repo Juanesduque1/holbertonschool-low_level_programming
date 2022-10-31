@@ -19,26 +19,18 @@ char *str_concat(char *s1, char *s2)
 
 	i = 0;
 	j = 0;
-
 	if (s1 == 0)
-	{
 		s1 = "";
-	}
 	if (s2 == 0)
-	{
 		s2 = "";
-	}
 
 	len1 = strlen(s1) + 1;
 	len2 = strlen(s2) + 1;
 	tlen = len1 + len2;
-
 	array = malloc(tlen - 1);
 
 	if (array == NULL)
-	{
 		return (NULL);
-	}
 
 	while (s1[i] != '\0')
 	{
@@ -46,9 +38,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		j++;
 	}
-
 	i = 0;
-
 	while (s2[i] != '\0')
 	{
 		array[j] = s2[i];
