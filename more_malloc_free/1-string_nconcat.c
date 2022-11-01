@@ -8,6 +8,7 @@
 **string_nconcat - Concatenate two strings
 *@s1: String 1
 *@s2: String 2
+@n: Number of bytes
 *
 *Return: Always 0
 */
