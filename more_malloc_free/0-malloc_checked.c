@@ -1,18 +1,23 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <limits.h>
 
 /**
-**_strdup - Return a copy of a string
-*@str: Original string
+**malloc_checked - Allocates the memory with malloc
+*@b: Size to allocate
 *
-*Return: Copy of the string
+*Return: Always 0
 */
 
 void *malloc_checked(unsigned int b)
 {
 	char *ar = malloc(b);
 
+	if (ar == NULL)
+	{
+		printf('98\n');
+		return (0);
+	}
 	return (ar);
 }
