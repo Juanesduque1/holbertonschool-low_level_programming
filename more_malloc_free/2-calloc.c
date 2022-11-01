@@ -6,7 +6,7 @@
 /**
 **_calloc - Executes the malloc function
 *@nmemb: Number of elements
-*@size: Size 
+*@size: Size
 *
 *Return: Always 0
 */
@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (i = 0; i < j; i++)
 		array[i] = 0;
-	
+
 	return (array);
 
 }
