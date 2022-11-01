@@ -11,7 +11,7 @@
 *Return: Array result or NULL
 */
 
-void *free_grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 
 	int i = 0;
@@ -28,7 +28,7 @@ void *free_grid(int **grid, int height)
 	{
 		for (j = 0; j < width; j++)
 		{
-			free(*grid[i][j]);
+			free(grid[i][j]);
 		}
 	}
 	free(grid);
