@@ -1,3 +1,3 @@
 #ifndef SUM
-#define SUM(a,b) (a + b)
-#endif
+#define SUM(a , b) (a + b)
+#endif SUM
