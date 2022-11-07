@@ -2,12 +2,12 @@
 #define dogstr
 
 /**
- * struct dog: Struct to declare dog
+ * struct dog - Struct to declare dog
  * @name: Name of the dog
  * @owner: Owner name
  * @age: Age of the dog
- * 
- * Description: Structures and typedef project
+ *
+ * Description - Structures and typedef project
  */
 
 typedef struct dog
