@@ -1,8 +1,10 @@
+#ifndef dogstr
+#define dogstr
+
 /**
- * dog: Struct to declare dog
+ * struct dog: Struct to declare dog
  */
 
-#ifdef dogstr
 typedef struct dog
 {
 	char *name;
