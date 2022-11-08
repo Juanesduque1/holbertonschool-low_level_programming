@@ -5,7 +5,7 @@
  * print_name - Prints a name
  * @name: Name given
  * @f: Function to execute
- * 
+ *
  * Return: Always 0
  */
 
