@@ -27,13 +27,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	else
-	{
-		newDog->name = name;
-		newDog->age = age;
-		newDog->owner = owner;
-	}
 
+	newDog->age = age;
 	newDog->name = malloc(lenname + 1);
 	if (newDog->name == NULL)
 	{
