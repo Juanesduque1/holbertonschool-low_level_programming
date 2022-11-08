@@ -16,7 +16,7 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		return (0);
+		printf("/x2b[1C\n");
 	}
 	else
 	{
