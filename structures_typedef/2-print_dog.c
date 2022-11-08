@@ -5,9 +5,6 @@
 /**
  * print_dog - Prints the structure of dog
  * @d: Struct in dog.h
- * @name: Name of the dog
- * @owner: Owner name
- * @age: Age of the dog
  *
  * Return: Always 0
  */
@@ -16,33 +13,33 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("/x2b[1C\n");
+		printf(NULL);
 	}
 	else
 	{
 		if (d->name != NULL)
 		{
-			printf("Name: %s", d->name);
+			printf("Name: %s\n", d->name);
 		}
 		else
 		{
-			printf("Name: (nil)");
+			printf("Name: (nil)\n");
 		}
-		if (d->age != 0)
+		if (d->age != NULL)
 		{
-			printf("Age: %f", d->age);
+			printf("Age: %f\n", d->age);
 		}
 		else
 		{
-			printf("Age: (nil)");
+			printf("Age: (nil)\n");
 		}
 		if (d->owner != NULL)
 		{
-			printf("Owner: %s", d->owner);
+			printf("Owner: %s\n", d->owner);
 		}
 		else
 		{
-			printf("Owner: (nil)");
+			printf("Owner: (nil)\n");
 		}
 	}
 }
