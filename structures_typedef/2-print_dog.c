@@ -16,7 +16,7 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("\0");
+		return (0);
 	}
 	else
 	{
