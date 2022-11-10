@@ -25,14 +25,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if (i < n - 1)
 			{
 				if (va_arg(ptr, char *) != NULL)
-					printf("%d%s", va_arg(ptr, char *), separator);
+					printf("%s%s", va_arg(ptr, char *), separator);
 				else
 					printf("(nil)");
 			}
 			if (i == n - 1)
 			{
 				if (va_arg(ptr, char *) != NULL)
-					printf("%d", va_arg(ptr, char *));
+					printf("%s", va_arg(ptr, char *));
 				else
 					printf("(nil)");
 			}
@@ -40,7 +40,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (separator == NULL)
 		{
 			if (va_arg(ptr, char *) != NULL)
-				printf("%d", va_arg(ptr, char *));
+				printf("%s", va_arg(ptr, char *));
 			else
 				printf("(nil)");
 		}
