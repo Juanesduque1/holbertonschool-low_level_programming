@@ -23,10 +23,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		pointres = va_arg(ptr, char *);
 
-		if (pointres != NULL)
-			printf("%s", pointres);
-		else
+		if (pointres == NULL)
 			printf("(nil)");
+		else
+			printf("%s", pointres);
 
 		if (i < n - 1 && separator != NULL)
 			printf("%s%s", pointres, separator);
