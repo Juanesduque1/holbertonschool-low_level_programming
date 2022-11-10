@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
-*sum_them_all - Adds all the parameters of the variadic function
+*print_numbers - Prints the integers given as arguments in the variadic function
+*@separator: Separator of integers for printing
 *@n: Argument
 *
 *Return: Zero
@@ -15,20 +16,23 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 
 	va_list(ptr);
+	va_start(ptr, n);
 
-	if (separator != NULL)
+	for (i = 0; i < n; i++)
 	{
-		va_start(ptr, n);
-
-		for (i = 0; i < n; i++)
+		if (separator != NULL)
 		{
 			if (i < n - 1)
 				printf("%d%s", va_arg(ptr, int), separator);
 			if (i == n - 1)
 				printf("%d", va_arg(ptr, int));
 		}
-		printf("\n");
-
-		va_end(ptr);
+		if (separator == NULL)
+		{
+			printf("%d", va_arg(ptr, int));
+		}
 	}
+	printf("\n");
+
+	va_end(ptr);
 }
