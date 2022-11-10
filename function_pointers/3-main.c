@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	getop = get_op_func(argv[2]);
 
-	if (getop != NULL )
+	if (getop != NULL)
 	{
 		printf("%i\n", getop(num1, num2));
 	}
