@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-*print_numbers - Prints the integers given as arguments in the variadic function
+*print_numbers - Prints integers given as arguments in the variadic function
 *@separator: Separator of integers for printing
 *@n: Argument
 *
