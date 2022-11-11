@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 					printf("%d", i);
 					break;
 			case 'f':
-					f = va_arg(ptr, double);
+					f = (float) va_arg(ptr, double);
 					printf("%f", f);
 					break;
 			case 's':
