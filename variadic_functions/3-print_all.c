@@ -2,30 +2,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int type_char(const char *separator, char *s)
-{
-	printf("%s%s", separator, s);
-	return (0);
-}
-
-int type_int(const char *separator, int n)
-{
-	printf("%s%i", separator, n);
-	return (0);
-}
-
-int type_float(const char *separator, float n)
-{
-	printf("%s%f", separator, n);
-	return (0);
-}
-
-int type_pointer(const char *separator, char *p)
-{
-	printf("%s%s", separator, p);
-	return (0);
-}
-
 /**
 *print_all - Prints anything
 *@format: Type of data
@@ -37,22 +13,40 @@ int type_pointer(const char *separator, char *p)
 void print_all(const char * const format, ...)
 {
 
-	int i = 0;
-	char *separator = ", ";
-	va_list(formats);
+	unsigned int count;
+	char c;
+	int i;
+	float f;
+	char *s;
+	char separator = ", ";
 
-	type_t types[] = {
-		{"c", type_char},
-		{"i", type_int},
-		{"f", type_float},
-		{"s", type_pointer}
-	};
+	va_list (ptr);
+	va_start (ptr, format);
 
-	while (types[i].t)
+	while (format != NULL && format[count] != '\0')
 	{
-		if (types[i].t == format)
-			return (types[i].f());
-		i++;
+		switch (format[count++])
+		{
+			case 'c':
+					c = (char) va_arg(ptr, int);
+					printf("%s", c);
+					break;
+			case 'i':
+					i = va_arg(ptr, int);
+					printf("%d", i);
+					break;
+			case 'f':
+					f = va_arg(ptr, double);
+					printf("%f", f);
+					break;
+			case 's':
+					s = (char *) va_arg(ptr, int);
+					printf("%s", s);
+					break;
+		}
+		if (format[count] != NULL)
+			printf("%s", separator);
 	}
-
+	va_end(ptr);
+	printf("\n");
 }
