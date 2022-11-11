@@ -13,16 +13,16 @@
 void print_all(const char * const format, ...)
 {
 
-	int count = 0;
+	va_list(ptr);
+	unsigned int count = 0;
 	char c;
 	int i;
 	float f;
 	char *s;
 
-	va_list(ptr);
 	va_start(ptr, format);
 
-	while (format && format[count] != '\0')
+	while (format != NULL && format[count] != '\0')
 	{
 		switch (format[count++])
 		{
@@ -44,6 +44,8 @@ void print_all(const char * const format, ...)
 						s = ("(nil)");
 					printf("%s", s);
 					break;
+			default:
+					continue;
 		}
 		if (format[count] != '\0')
 			printf(", ");
