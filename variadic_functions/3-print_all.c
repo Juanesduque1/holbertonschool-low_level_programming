@@ -13,14 +13,14 @@
 void print_all(const char * const format, ...)
 {
 
-	unsigned int count;
+	unsigned int count = 0;
 	char c;
 	int i;
 	float f;
 	char *s;
 
-	va_list (ptr);
-	va_start (ptr, format);
+	va_list(ptr);
+	va_start(ptr, format);
 
 	while (format != NULL && format[count] != '\0')
 	{
@@ -48,6 +48,6 @@ void print_all(const char * const format, ...)
 		if (format[count] != '\0')
 			printf(", ");
 	}
-	va_end(ptr);
 	printf("\n");
+	va_end(ptr);
 }
