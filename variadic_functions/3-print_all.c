@@ -14,7 +14,7 @@ void type_int(const char *separator, int n)
 
 void type_float(const char *separator, float n)
 {
-	printf("%s%d", separator, n);
+	printf("%s%f", separator, n);
 }
 
 void type_pointer(const char *separator, char *p)
@@ -47,7 +47,7 @@ void print_all(const char * const format, ...)
 	while (types[i].t)
 	{
 		if (types[i].t == format)
-			types[i].f();
+			return (types[i].f());
 		i++;
 	}
 
