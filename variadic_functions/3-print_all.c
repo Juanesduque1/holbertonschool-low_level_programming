@@ -2,24 +2,28 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-void type_char(const char *separator, char *s)
+int type_char(const char *separator, char *s)
 {
 	printf("%s%s", separator, s);
+	return (0);
 }
 
-void type_int(const char *separator, int n)
+int type_int(const char *separator, int n)
 {
 	printf("%s%i", separator, n);
+	return (0);
 }
 
-void type_float(const char *separator, float n)
+int type_float(const char *separator, float n)
 {
 	printf("%s%f", separator, n);
+	return (0);
 }
 
-void type_pointer(const char *separator, char *p)
+int type_pointer(const char *separator, char *p)
 {
 	printf("%s%s", separator, p);
+	return (0);
 }
 
 /**
