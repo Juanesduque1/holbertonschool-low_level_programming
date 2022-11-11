@@ -48,6 +48,6 @@ void print_all(const char * const format, ...)
 		if (format[count] != '\0')
 			printf(", ");
 	}
-	printf("\n");
 	va_end(ptr);
+	printf("\n");
 }
