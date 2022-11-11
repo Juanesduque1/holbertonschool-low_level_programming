@@ -13,7 +13,7 @@
 void print_all(const char * const format, ...)
 {
 
-	unsigned int count = 0;
+	int count = 0;
 	char c;
 	int i;
 	float f;
@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 	va_list(ptr);
 	va_start(ptr, format);
 
-	while (format != NULL && format[count] != '\0')
+	while (format && format[count] != '\0')
 	{
 		switch (format[count++])
 		{
