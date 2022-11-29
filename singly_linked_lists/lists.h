@@ -1,6 +1,9 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+#include "stdlib.h"
+#include "stdio.h"
+
 /* Prototypes */
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
@@ -11,7 +14,9 @@ void free_list(list_t *head);
 /* Structures */
 typedef struct size_t
 {
-	/* data */
+	int data;
+	struct node_t *next;
+
 } size_t;
 
 #endif
