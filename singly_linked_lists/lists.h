@@ -1,8 +1,27 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-#include "stdlib.h"
-#include "stdio.h"
+/* Libraries */
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+
+/* Structures */
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ */
+
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
 
 /* Prototypes */
 size_t print_list(const list_t *h);
@@ -11,12 +30,5 @@ list_t *add_node(list_t **head, const char *str);
 list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
-/* Structures */
-typedef struct size_t
-{
-	int data;
-	struct node_t *next;
-
-} size_t;
 
 #endif
