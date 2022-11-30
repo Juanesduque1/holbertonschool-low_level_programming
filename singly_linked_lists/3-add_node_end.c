@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-**add_node - Add elements to the structure
+**add_node_end - Add elements to the structure
 *@head: Head of the structure
 *@str: String to add in the structure
 *
