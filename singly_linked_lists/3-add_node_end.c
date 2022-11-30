@@ -8,10 +8,11 @@
 *Return: Number of nodes
 */
 
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 
 	list_t *new;
+	list_t *aux = *head;
 	int count = 0;
 
 	while (str[count])
@@ -26,8 +27,15 @@ list_t *add_node(list_t **head, const char *str)
 
 	new->str = strdup(str);
 	new->len = count;
-	new->next = *head;
-	*head = new;
+	new->next = NULL;
 
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		while (aux->next)
+			aux = aux->next;
+		aux->next = new;
+	}
 	return (new);
 }
