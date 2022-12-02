@@ -2,7 +2,7 @@
 
 /**
 *print_binary - Print a binary number
-*@b: Number to print
+*@n: Number to print
 *
 *Return: Always 0
 */
