@@ -5,7 +5,6 @@
 *@head: Head of the structure
 *@idx: Index of the list
 *@n: Node to add
-
 *
 *Return: Head of the structure
 */
@@ -18,15 +17,30 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	if (!head || !*head)
 		return (NULL);
-	
-	new_node= malloc(sizeof(listint_t));
+
+	new_node = malloc(sizeof(listint_t));
 	if (!new_node)
 		return (NULL);
-
+	
 	aux = *head;
+
+	if (idx == 0)
+    {
+		new_node->next = aux;
+		*head = new_node;
+		return (*head);
+    }
+
+	if (!idx)
+	{
+		new_node->n = n;
+		new_node->next = NULL;
+		return (new_node);
+	}
+
 	new_node->n = n;
 	new_node->next = NULL;
-	
+
 	while (i < idx - 1)
 	{
 		aux = aux->next;
