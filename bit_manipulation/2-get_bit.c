@@ -3,7 +3,7 @@
 /**
 *get_bit - Returns the vañue of a bit at given index
 *@n: Bit
-*@index: Index 
+*@index: Index
 *
 *Return: Always 0
 */
