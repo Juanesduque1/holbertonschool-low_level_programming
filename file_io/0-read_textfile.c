@@ -30,19 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!toread)
 		return (0);
 
-	if (letters > toread)
-	{
-		towrite = write(2, c, toread);
-		if (towrite == -1)
-			return (0);
-
-		close(toopen);
-		free(c);
-		return (toread);
-	}
-	else
-	{
-	towrite = write(1, c, toread);
+	towrite = write(STDOUT_FILENO, c, toread);
 	if (towrite == -1)
 		return (0);
 
@@ -50,4 +38,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(c);
 	return (toread);
 	}
-}
