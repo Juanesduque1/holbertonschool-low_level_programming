@@ -11,8 +11,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int toopen, towrite;
-	unsigned long toread;
+	int toopen, toread, towrite;
 	char *c;
 
 	if (!filename || letters == 0)
@@ -37,4 +36,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(toopen);
 	free(c);
 	return (toread);
-	}
+}
