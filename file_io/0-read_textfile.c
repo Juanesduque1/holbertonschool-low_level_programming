@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int toopen, toread, towrite;
 	char *c;
 
-	if (!filename)
+	if (!filename || letters == 0)
 		return (0);
 
 	c = malloc(letters);
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!c)
 		return (0);
 
-	toopen = open(filename, O_RDWR);
+	toopen = open(filename, O_RDONLY);
 
 	if (!toopen)
 		return (0);
