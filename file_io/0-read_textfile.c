@@ -32,6 +32,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!toread)
 		return (0);
 
-	write(1, c, letters);
-	return (letters);
+	write(1, c, toread);
+
+	close(toopen);
+	free(c);
+	return (toread);
 }
