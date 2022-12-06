@@ -11,7 +11,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int toopen, toread;
+	int toopen, toread, towrite;
 	char *c;
 
 	if (!filename)
@@ -32,7 +32,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!toread)
 		return (0);
 
-	write(1, c, toread);
+	towrite = write(1, c, toread);
+
+	if (towrite == -1)
+		return (0);
 
 	close(toopen);
 	free(c);
