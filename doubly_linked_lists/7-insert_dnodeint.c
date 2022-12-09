@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
-**insert_nodeint_at_index - Inserts a node at a given position
-*@head: Head of the structure
+**insert_dnodeint_at_index - Inserts a node at a given position
+*@h: Head of the structure
 *@idx: Index of the list
 *@n: Node to add
 *
@@ -12,41 +12,36 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 
-	dlistint_t *len_aux, *aux, *new_node = NULL;
-	unsigned int i = 0, len = 0;
+	dlistint_t *new_node, *current;
+	unsigned int i = 0;
 
-	if (!*h && idx != 0)
+	current = *h;
+
+	if (!*h)
 		return (NULL);
 
-	len_aux = *h;
-	while (len_aux)
+	while (i < idx && current)
 	{
-		len_aux = len_aux->next;
-		len++;
+		current = current->next;
+		i++;
 	}
-	if (idx > len)
+
+	if (idx < i)
 		return (NULL);
 
 	new_node = malloc(sizeof(dlistint_t));
+	
 	if (!new_node)
 		return (NULL);
 
-	aux = *h;
-	new_node->n = n;
-	new_node->next = NULL;
+	 new_node->n = n;
+	 new_node->prev = current->prev;
+	 new_node->next = current;
 
-	if (idx == 0)
-	{
-		new_node->next = *h;
+	if (!current->prev)
 		*h = new_node;
-		return (new_node);
-	}
-	while (i < idx - 1)
-	{
-		aux = aux->next;
-		i++;
-	}
-	new_node->next = aux->next;
-	aux->next = new_node;
+	else
+		current->prev->next = new_node;
+
 	return (new_node);
 }
