@@ -23,7 +23,7 @@ int copy_fun(char *file_from, char *file_to)
 	if (fd_from == -1)
 		return (-1);
 
-	fd_to = open(file_to, O_RDWR | O_CREAT | O_TRUNC, 0664);
+	fd_to = open(file_to, O_RDONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		close(fd_from);
