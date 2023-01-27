@@ -1,6 +1,6 @@
 # Holberton School Low-level Programming
 
-This repository contains projects coded for the low-level programming module for the **Software Engineering studies** at **Holberton School**. It was made to understand data structures, algorithms, and other low-level programming concepts while working especially in the C language.
+This repository contains projects coded for the low-level programming module for the **Software Engineering** program at **Holberton School**. It was made to understand data structures, algorithms, and other low-level programming concepts while working especially in the C language.
 
 ## Projects
 All of the following folders are projects done during this module:
